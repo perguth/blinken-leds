@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "standard && tape test.js | tap-spec",
-    "start": "budo --debug --live --host localhost index.js"
+    "start": "budo --debug --live --host localhost index.js:bundle.js",
+    "build": "chmod +x build.sh && ./build.sh"
   },
   "repository": {
     "type": "git",

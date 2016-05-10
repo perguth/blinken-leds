@@ -49,6 +49,7 @@ function genHtmlLeds (leds) {
 var htmlLeds = genHtmlLeds(leds)
 document.getElementById('leds').appendChild(htmlLeds)
 
+  console.log('start timeout')
 window.setTimeout(() => {
   console.log('timeout')
   protoLed.fontSize = '28px'
